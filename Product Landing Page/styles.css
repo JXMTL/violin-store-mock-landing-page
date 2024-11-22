@@ -1,0 +1,304 @@
+@media (max-width: 768px) {
+    .product-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: #2c2c2c;
+    background-color: #f5f5f5;
+}
+
+header.hero {
+    background: url('https://i.imgur.com/OLMQ4Zl.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fefefe;
+    text-align: center;
+    padding: 120px 20px;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+
+header#header .logo {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 150px;
+    height: auto;
+    z-index: 1010;
+}
+
+header.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header.hero .cta-button {
+    display: inline-block;
+    background: #8b4513;
+    color: #fefefe;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #a0522d;
+}
+
+header.hero .cta-button:hover {
+    background: #a0522d;
+}
+
+.nav-container nav#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a.nav-link {
+    text-decoration: none;
+    color: brown;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a.nav-link:hover {
+    color: #8a6555;
+}
+
+.products-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff8e7;
+    border-top: 1px solid #e4d5c5;
+    border-bottom: 1px solid #e4d5c5;
+}
+
+.products-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4b3b2a;
+    text-transform: uppercase;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #4b3b2a;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #6b5948;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background: #8b4513;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-card button:hover {
+    background: #a0522d;
+}
+.fake-submit{
+    display: none;
+}
+.testimonials {
+    padding: 60px 20px;
+    background: #fdf2e9;
+    text-align: center;
+    border-top: 1px solid #e4d5c5;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4b3b2a;
+    text-transform: uppercase;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #4b3b2a;
+    margin-bottom: 30px;
+}
+
+.testimonial cite {
+    font-size: 1rem;
+    color: #6b5948;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 20px;
+    background: #4b3b2a;
+    color: #fff;
+    font-size: 0.9rem;
+    border-top: 2px solid #6b5948;
+}
+
+footer .footer-links {
+    margin-top: 10px;
+}
+
+footer .footer-links a {
+    color: #fefefe;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    color: #a0522d;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4b3b2a;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #6b5948;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4b3b2a;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+}
+
+input:focus, textarea:focus {
+    border-color: #8b4513;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: #8b4513;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #a0522d;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #a0522d;
+}
+
+#video-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+#video-section .video-text h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+    color: #4b3b2a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#video-section .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#video {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
